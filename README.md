@@ -6,11 +6,7 @@
 
 The system combines a **Convolutional Neural Network (CNN)** with a **FastAPI backend** and a lightweight web frontend to provide automated plant disease predictions and confidence scores.
 
-> 🎓 Developed as a college minor project to explore the practical application of Artificial Intelligence, Computer Vision, and Deep Learning in agriculture.
-
----
-
-## 🚀 Overview
+##  Overview
 
 Plant diseases can significantly affect crop productivity and agricultural output. Early identification of symptoms can help in taking appropriate action before the disease spreads.
 
@@ -32,22 +28,17 @@ The current model focuses on **four tomato leaf classes**.
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 - 🌱 Tomato leaf disease detection
 - 🧠 CNN-based image classification
 - 📷 Single-image prediction
 - ⚡ FastAPI inference backend
 - 📊 Prediction confidence score
-- 🌐 Browser-based interface
-- 🏋️ Separate model-training pipeline
-- 🧩 Modular frontend/backend architecture
-- 📈 Training accuracy visualization
-- 🔬 Designed for future multi-crop expansion
-
+  
 ---
 
-## 🦠 Supported Classes
+##  Supported Classes
 
 The current model recognizes four tomato leaf conditions:
 
@@ -60,7 +51,7 @@ The current model recognizes four tomato leaf conditions:
 
 ---
 
-# 🧠 How It Works
+#  How It Works
 
 ### 1. Image Upload
 
@@ -96,7 +87,7 @@ Confidence Percentage
 
 ---
 
-# 🏗️ System Architecture
+#  System Architecture
 
 ```text
 ┌──────────────────────────────┐
@@ -147,7 +138,7 @@ Confidence Percentage
 
 ---
 
-# 🛠️ Technology Stack
+#  Technology Stack
 
 ## Frontend
 
@@ -173,7 +164,7 @@ Confidence Percentage
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```text
 leafsense-diagnostics/
@@ -201,7 +192,7 @@ leafsense-diagnostics/
 
 ---
 
-# ⚙️ Installation
+#  Installation
 
 ## Prerequisites
 
@@ -227,7 +218,7 @@ cd leafsense-diagnostics
 
 ---
 
-# 🐍 2. Create Virtual Environment
+#  2. Create Virtual Environment
 
 Navigate to the backend:
 
@@ -251,7 +242,7 @@ source venv/bin/activate
 
 ---
 
-# 📦 3. Install Dependencies
+#  3. Install Dependencies
 
 Install the required Python packages:
 
@@ -261,7 +252,7 @@ pip install -r requirements.txt
 
 ---
 
-# ▶️ Running the Backend
+#  Running the Backend
 
 From the `backend` directory:
 
@@ -277,7 +268,7 @@ http://127.0.0.1:8000
 
 ---
 
-# 🌐 Running the Frontend
+#  Running the Frontend
 
 Open another terminal.
 
@@ -303,7 +294,7 @@ Make sure the backend is running before making predictions.
 
 ---
 
-# 🧪 Model Training
+#  Model Training
 
 The project includes a dedicated training pipeline.
 
@@ -341,7 +332,7 @@ The trained model is used by the FastAPI backend for real-time image prediction.
 
 ---
 
-# 📊 Dataset
+#  Dataset
 
 The project is designed around the **PlantVillage dataset**, using the tomato subset.
 
