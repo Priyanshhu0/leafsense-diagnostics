@@ -84,58 +84,6 @@ Predicted Disease
         +
 Confidence Percentage
 ```
-
----
-
-#  System Architecture
-
-```text
-┌──────────────────────────────┐
-│          USER                │
-│                              │
-│    Upload Tomato Leaf        │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│          FRONTEND            │
-│                              │
-│      HTML / CSS / JS         │
-└──────────────┬───────────────┘
-               │
-               │ HTTP Request
-               ▼
-┌──────────────────────────────┐
-│          FASTAPI             │
-│          BACKEND             │
-│                              │
-│   Image Processing           │
-│   Prediction Pipeline        │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│       IMAGE PREPROCESSING    │
-│                              │
-│       Resize 128 × 128       │
-│       Pixel Scaling          │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│          CNN MODEL           │
-│                              │
-│      TensorFlow / Keras      │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│       PREDICTION RESULT      │
-│                              │
-│   Disease + Confidence (%)   │
-└──────────────────────────────┘
-```
-
 ---
 
 #  Technology Stack
