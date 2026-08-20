@@ -311,7 +311,4 @@ dataset/
     └── Tomato___Late_blight/
 ```
 
-> **Note:** The dataset itself should not be unnecessarily committed to GitHub. Large datasets should generally be downloaded separately and excluded using `.gitignore`.
-
----
 
