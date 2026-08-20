@@ -1,3 +1,7 @@
+/* =========================================================
+   DEEPLEAF DIAGNOSTICS - STYLESHEET
+   ========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +33,7 @@ h1, h2, h3 { font-family: var(--font-heading); }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 
+/* ---------- Navbar ---------- */
 .navbar {
     background: var(--card-bg);
     border-bottom: 1px solid var(--border);
@@ -56,6 +61,7 @@ ul { list-style: none; }
 .nav-links a { color: var(--text-muted); font-size: 0.95rem; }
 .nav-links a:hover { color: var(--green); }
 
+/* ---------- Hero ---------- */
 .hero {
     text-align: center;
     padding: 50px 20px 30px 20px;
@@ -72,6 +78,7 @@ ul { list-style: none; }
     color: var(--text-muted);
 }
 
+/* ---------- Upload Section ---------- */
 .upload-section {
     max-width: 500px;
     margin: 0 auto;
@@ -148,6 +155,7 @@ ul { list-style: none; }
     margin-top: 12px;
 }
 
+/* ---------- Result Card ---------- */
 .card-heading {
     font-size: 1.1rem;
     font-weight: 600;
@@ -214,6 +222,7 @@ ul { list-style: none; }
     color: var(--text-muted);
 }
 
+/* ---------- About ---------- */
 .about-section {
     max-width: 700px;
     margin: 0 auto;
@@ -231,6 +240,7 @@ ul { list-style: none; }
     color: var(--text-muted);
 }
 
+/* ---------- Footer ---------- */
 .footer {
     text-align: center;
     padding: 20px;
