@@ -1,7 +1,12 @@
 import os
 import tensorflow as tf
 
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "model", "plant_disease_model.keras")
+
+MODEL_PATH = os.path.join(
+    os.path.dirname(__file__),
+    "model",
+    "plant_disease_model.keras"
+)
 
 CLASS_LABELS = [
     "Tomato - Bacterial Spot",
@@ -10,7 +15,7 @@ CLASS_LABELS = [
     "Tomato - Late Blight",
 ]
 
-IMAGE_SIZE = (128, 128) 
+IMAGE_SIZE = (128, 128)
 
 trained_model = None
 
@@ -19,16 +24,16 @@ def load_model():
     global trained_model
 
     if not os.path.exists(MODEL_PATH):
-        print("WARNING: Model file not found at:", MODEL_PATH)
-        print("Server will run, but /predict will return an error until you train a model.")
+        print(f"WARNING: Model not found: {MODEL_PATH}")
         trained_model = None
         return
 
     try:
         trained_model = tf.keras.models.load_model(MODEL_PATH)
         print("Plant disease model loaded successfully.")
+
     except Exception as e:
-        print("ERROR while loading model:", str(e))
+        print(f"ERROR: Failed to load model: {e}")
         trained_model = None
 
 
