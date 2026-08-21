@@ -4,8 +4,11 @@ from fastapi.middleware.cors import CORSMiddleware
 import model_loader
 from predict import predict_disease
 
+
 app = FastAPI(title="Plant Disease Detector API")
 
+
+# CORS configuration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -15,20 +18,22 @@ app.add_middleware(
 )
 
 
+# Load ML model when the server starts
 @app.on_event("startup")
 def startup_event():
     print("Starting Plant Disease Detector backend...")
     model_loader.load_model()
 
 
+# Health check
 @app.get("/")
 def read_root():
     return {"message": "Server Running"}
 
 
+# Plant disease prediction
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
-
     image_bytes = await file.read()
     result = predict_disease(image_bytes)
 
